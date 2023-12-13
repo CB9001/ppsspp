@@ -103,6 +103,16 @@ public:
 
 	bool bRunBehindPauseMenu;
 
+	// GPI Devkit switches
+	bool bGpiSwitch0Enabled;
+	bool bGpiSwitch1Enabled;
+	bool bGpiSwitch2Enabled;
+	bool bGpiSwitch3Enabled;
+	bool bGpiSwitch4Enabled;
+	bool bGpiSwitch5Enabled;
+	bool bGpiSwitch6Enabled;
+	bool bGpiSwitch7Enabled;
+
 	// Core
 	bool bIgnoreBadMemAccess;
 

@@ -299,6 +299,16 @@ static const ConfigSetting generalSettings[] = {
 	ConfigSetting("IgnoreCompatSettings", &g_Config.sIgnoreCompatSettings, "", CfgFlag::PER_GAME | CfgFlag::REPORT),
 
 	ConfigSetting("RunBehindPauseMenu", &g_Config.bRunBehindPauseMenu, false, CfgFlag::DEFAULT),
+
+	// Adding options for GPI Devkit switches
+	ConfigSetting("GPISwitch0Enabled", &g_Config.bGpiSwitch0Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch1Enabled", &g_Config.bGpiSwitch1Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch2Enabled", &g_Config.bGpiSwitch2Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch3Enabled", &g_Config.bGpiSwitch3Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch4Enabled", &g_Config.bGpiSwitch4Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch5Enabled", &g_Config.bGpiSwitch5Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch6Enabled", &g_Config.bGpiSwitch6Enabled, false, CfgFlag::DEFAULT),
+	ConfigSetting("GPISwitch7Enabled", &g_Config.bGpiSwitch7Enabled, false, CfgFlag::DEFAULT),
 };
 
 static bool DefaultSasThread() {

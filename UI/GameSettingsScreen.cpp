@@ -1152,6 +1152,15 @@ void GameSettingsScreen::CreateSystemSettings(UI::ViewGroup *systemSettings) {
 		return UI::EVENT_CONTINUE;
 	});
 
+	CheckBox *enableGPI0 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch0Enabled, sy->T("Enable GPI 0")));
+	CheckBox *enableGPI1 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch1Enabled, sy->T("Enable GPI 1")));
+	CheckBox *enableGPI2 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch2Enabled, sy->T("Enable GPI 2")));
+	CheckBox *enableGPI3 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch3Enabled, sy->T("Enable GPI 3")));
+	CheckBox *enableGPI4 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch4Enabled, sy->T("Enable GPI 4")));
+	CheckBox *enableGPI5 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch5Enabled, sy->T("Enable GPI 5")));
+	CheckBox *enableGPI6 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch6Enabled, sy->T("Enable GPI 6")));
+	CheckBox *enableGPI7 = systemSettings->Add(new CheckBox(&g_Config.bGpiSwitch7Enabled, sy->T("Enable GPI 7")));
+
 	systemSettings->Add(new ItemHeader(sy->T("PSP Settings")));
 
 	// The ordering here is simply mapping directly to PSP_SYSTEMPARAM_LANGUAGE_*.

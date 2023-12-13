@@ -356,9 +356,17 @@ void sceKernelSetGPO(u32 ledAddr)
 
 u32 sceKernelGetGPI()
 {
+	u32 gpiVals = g_Config.bGpiSwitch0Enabled | 
+				 (g_Config.bGpiSwitch1Enabled << 1) | 
+				 (g_Config.bGpiSwitch2Enabled << 2) | 
+				 (g_Config.bGpiSwitch3Enabled << 3) | 
+				 (g_Config.bGpiSwitch4Enabled << 4) | 
+				 (g_Config.bGpiSwitch5Enabled << 5) | 
+				 (g_Config.bGpiSwitch6Enabled << 6) | 
+				 (g_Config.bGpiSwitch7Enabled << 7);
 	// Always returns 0 on production systems.
 	DEBUG_LOG(SCEKERNEL, "0=sceKernelGetGPI()");
-	return 0;
+	return gpiVals;
 }
 
 // #define LOG_CACHE
